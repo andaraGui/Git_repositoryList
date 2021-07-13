@@ -9,7 +9,7 @@ margin: 0 auto;
 
 export const Title = styled.h1`
     text-align: center;
-    fonte-size: 2rem;
+    font-size: 2rem;
     font-family: sans-serif;
     color: #333;
 `
@@ -29,10 +29,10 @@ export const LisItem = styled.li`
 `
 export const LinkHome = styled(Link)`
     display:block;
-    widht: 4erm;
+    width: 4erm;
     text-align: center;
     margin: 2rem auto;
-    background-color #000;
+    background-color: #000;
     padding: .5rem 0;
     color: #fff;
     text-decoration: none;
