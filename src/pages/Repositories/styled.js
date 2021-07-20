@@ -30,6 +30,15 @@ export const LisItem = styled.li`
     color: #fff;
     padding: .5rem;
     cursor: pointer;
+    font-family: sans-serif;
+    &:hover{
+        color: #000;
+        background-color: #fff;
+        box-shadow:0px 0px 0px 2px black inset;
+    }
+    &:active{
+        box-shadow:0px 0px 0px 1px black inset;
+    }
     
 `
 export const LinkHome = styled(Link)`

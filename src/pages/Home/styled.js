@@ -8,6 +8,12 @@ export const HomeContainer = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    p{
+        color: darkgray;
+        font-family: sans-serif;
+        margin-bottom: -1px;
+    }
+
 `
 
 export const Content = styled.div`
@@ -38,7 +44,17 @@ export const Button = styled.button`
     color: #fff;
     border-radius: 0 .25rem .25rem 0;
     cursor: pointer;
-   
+    font-family: sans-serif;
+
+    &:hover{
+        color: #000;
+        background-color: #fff ;
+        border: 2px solid #000;
+    }
+    &:active{
+        font-size: 13px;
+    }
+
 `
 
 export const ErrorMsg = styled.span`

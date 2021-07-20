@@ -35,8 +35,9 @@ function Home() {
 
 
     <S.HomeContainer>
+      <p> Digite o usuário do GitHub para fazer a listagem de repositórios.</p>
       <S.Content>
-        <S.Input className="usuarioInput" placeholder="Usuário" value={usuario} onChange={e => setUsuario(e.target.value)} />
+        <S.Input className="usuarioInput" placeholder="Usuário do GitHub" value={usuario} onChange={e => setUsuario(e.target.value)} />
         <S.Button type="button" onClick={handlePesquisa} >Pesquisar</S.Button>
       </S.Content>
 
