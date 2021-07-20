@@ -36,7 +36,8 @@ export const Button = styled.button`
     border: 1px solid #000;
     background: #000;
     color: #fff;
-    border-radius: 0 .25rem .25rem 0
+    border-radius: 0 .25rem .25rem 0;
+    cursor: pointer;
    
 `
 
@@ -44,7 +45,7 @@ export const ErrorMsg = styled.span`
     display: block;
     font-size: 0.65rem;
     color: red;
-    font-weight 600;
+    font-weight: 600;
     margin-top: 1rem;
 `
 

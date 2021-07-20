@@ -19,6 +19,9 @@ export const List = styled.ul`
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    a{
+        text-decoration: none;
+    }
 `
 
 export const LisItem = styled.li`
@@ -26,6 +29,8 @@ export const LisItem = styled.li`
     background: #000;
     color: #fff;
     padding: .5rem;
+    cursor: pointer;
+    
 `
 export const LinkHome = styled(Link)`
     display:block;

@@ -6,19 +6,22 @@ export default function Repositories() {
 
     const history = useHistory();
     const [repositories, setRepositories] = useState([])
+    const [links, setLinks] = useState([]);
 
     useEffect(() => {
         let repositoriesName = localStorage.getItem('repositoriesName');
+        let repositoriesLink = localStorage.getItem('repositoriesLink');
         repositoriesName = JSON.parse(repositoriesName);
-        
-        if(repositoriesName !== null){
-            console.log(repositoriesName);
-        setRepositories(repositoriesName)
-        localStorage.clear();
-        }else{
+        repositoriesLink = JSON.parse(repositoriesLink);
+
+        if (repositoriesName !== null) {
+            setRepositories(repositoriesName)
+            setLinks(repositoriesLink);
+            localStorage.clear();
+        } else {
             history.push('/')
         }
-        
+
     }, []);
 
     return (
@@ -27,7 +30,7 @@ export default function Repositories() {
             <S.List>
                 {repositories.map((elem, index) => {
                     return (
-                        <S.LisItem key={index}> Repositorio: {elem}</S.LisItem>
+                        <a target="_blank" href={`${links[index]}`}><S.LisItem key={index}> Repositorio: {elem}</S.LisItem></a>
                     )
                 })}
             </S.List>

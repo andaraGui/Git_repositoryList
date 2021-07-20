@@ -14,11 +14,15 @@ function Home() {
       .then(response => {
         const repositories = response.data;
         const repositoriesName = [];
+        const respositoriesLink = [];
         repositories.map((repository) => {
           repositoriesName.push(repository.name);
+          respositoriesLink.push(repository.html_url)
         })
         JSON.stringify(repositoriesName);
+        JSON.stringify(respositoriesLink);
         localStorage.setItem('repositoriesName', JSON.stringify(repositoriesName));
+        localStorage.setItem('repositoriesLink', JSON.stringify(respositoriesLink));
         setErro(false)
         history.push('/repositories')
       })
